@@ -132,7 +132,7 @@ img {
   height: 60px;
   width: auto;
   margin-bottom: 16px;
-  filter: brightness(0) invert(1);
+  border-radius: 8px;
 }
 
 .footer-brand p {

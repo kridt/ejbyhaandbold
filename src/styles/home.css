@@ -455,7 +455,22 @@
   display: flex;
   justify-content: center;
   gap: 60px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+}
+
+.cta-registration-info {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+.cta-registration-info a {
+  color: white;
+  text-decoration: underline;
+}
+
+.cta-registration-info a:hover {
+  opacity: 0.8;
 }
 
 .price-item {

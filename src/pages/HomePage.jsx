@@ -7,14 +7,14 @@ const HomePage = () => {
     { name: "U8", ages: "6-8 år", time: "Tirsdag 16:00-17:00", color: "blue" },
     { name: "Cool Ladies", ages: "Dame Senior", time: "Tirsdag 18:45-20:15", color: "pink" },
     { name: "Herre Senior", ages: "Senior", time: "Tirsdag 20:30-22:00", color: "green" },
-    { name: "Five a Side", ages: "Mix voksne", time: "Torsdag 19:00-20:00", color: "purple" },
+    { name: "Five a Side", ages: "Mix voksne", time: "Følg vores Facebook", color: "purple" },
   ]
 
   const schedule = [
     { day: "Tirsdag", time: "16:00-17:00", team: "Børnehold", type: "Trille Trolle + U8" },
     { day: "Tirsdag", time: "18:45-20:15", team: "Cool Ladies", type: "Dame Senior" },
     { day: "Tirsdag", time: "20:30-22:00", team: "Herre Senior", type: "Senior mænd" },
-    { day: "Torsdag", time: "19:00-20:00", team: "Five a Side", type: "Mix voksne" },
+    { day: "Se Facebook", time: "for opstart", team: "Five a Side", type: "Mix voksne" },
   ]
 
   return (
@@ -46,8 +46,8 @@ const HomePage = () => {
           </div>
           <div className="hero-image">
             <img
-              src="https://images.pexels.com/photos/3755440/pexels-photo-3755440.jpeg?auto=compress&cs=tinysrgb&w=600&h=500&fit=crop"
-              alt="Håndbold"
+              src="/20240711_115608_resized.jpg"
+              alt="Ejby IF Håndbold - Børnehold"
             />
           </div>
         </div>
@@ -103,8 +103,11 @@ const HomePage = () => {
                 ))}
               </div>
             </div>
-            <div className="schedule-image schedule-placeholder">
-              <span>Træningsbillede</span>
+            <div className="schedule-image">
+              <img
+                src="/20231010_202800.jpg"
+                alt="Træning i Ejbyhallen"
+              />
             </div>
           </div>
         </div>
@@ -118,23 +121,23 @@ const HomePage = () => {
             <p className="section-subtitle">Øjeblikke fra vores klub</p>
           </div>
           <div className="gallery-grid">
-            <div className="gallery-item gallery-large gallery-placeholder">
-              <span>Holdbillede</span>
+            <div className="gallery-item gallery-large">
+              <img src="/received_558960450347550.jpeg" alt="Cool Ladies fejrer sejr" />
             </div>
-            <div className="gallery-item gallery-placeholder">
-              <span>Træning</span>
+            <div className="gallery-item">
+              <img src="/20240416_165423_resized.jpg" alt="Vores yngste spillere" />
             </div>
-            <div className="gallery-item gallery-placeholder">
-              <span>Kamp</span>
+            <div className="gallery-item">
+              <img src="/20240827_203508_resized.jpg" alt="Herre Senior holdet" />
             </div>
-            <div className="gallery-item gallery-placeholder">
-              <span>Håndbold</span>
+            <div className="gallery-item">
+              <img src="/20240711_100056.jpg" alt="Målvogter i aktion" />
             </div>
-            <div className="gallery-item gallery-wide gallery-placeholder">
-              <span>Fællesskab</span>
+            <div className="gallery-item gallery-wide">
+              <img src="/20241102_103453_resized.jpg" alt="U8 holdet med trænere" />
             </div>
-            <div className="gallery-item gallery-placeholder">
-              <span>Spillere</span>
+            <div className="gallery-item">
+              <img src="/20240317_145500_resized.jpg" alt="Fejring efter kamp" />
             </div>
           </div>
         </div>
@@ -156,7 +159,10 @@ const HomePage = () => {
                 <span className="price-label">voksne / år</span>
               </div>
             </div>
-            <Link to="/tilmelding" className="cta-button">Tilmeld dig nu</Link>
+            <p className="cta-registration-info">
+              Tilmelding sker via Holdsport appen eller på <a href="mailto:info@ejbyhaandbold.dk">info@ejbyhaandbold.dk</a>
+            </p>
+            <a href="https://www.holdsport.dk/team/ejby-if-handbold" target="_blank" rel="noopener noreferrer" className="cta-button">Tilmeld via Holdsport</a>
           </div>
         </div>
       </section>
